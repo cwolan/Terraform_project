@@ -1,3 +1,18 @@
+# output "public_ip" {
+#   value = aws_instance.web.public_ip
+  
+# }
+
+# output "private_dns" {
+#   value = aws_instance.web.private_dns
+
+# }
+
+# output "arn" {
+#   value = aws_instance.web.arn
+
+# }
+
 variable "ami" {
     description = "ami for webserver instance"
     type = string
@@ -28,19 +43,17 @@ variable "associate_public_ip_address" {
   
 
 
-  variable "ami" {
-  description = "variable for my web instance server"
-  type        = string
+  #variable "ami" {
+  #description = "variable for my web instance server"
+  #type        = string
   #default     = "ami-0dfcb1ef8550277af"
   #sensitive = false
 
 }
 
-variable "instance_type" {
-  description = "variable for my web instance server"
-  type        = list
-  #alias default     = ["t2.medium", "t2.micro", "t3.nano"]
-  sensitive   = false
-
-}
-}
+# variable "instance_type" {
+#   description = "variable for my web instance server"
+#   type        = list
+#   #alias default     = ["t2.medium", "t2.micro", "t3.nano"]
+#   sensitive   = false
+#}
